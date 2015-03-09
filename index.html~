@@ -1,75 +1,22 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>60</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-    <style>
-    .jumbotron{text-align:center}
-    .project-name{padding:10px}
-    </style>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="project-name text-muted">60 things</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1 id="character">0</h1>
-        <p id="syllable" class="lead" data-meaningful="true" ct-id="1">py</p>
-        <p id="decimal">0</p>
-        <p>
-          <a class="action action-reset btn btn-lg btn-disabled btn-default" href="#" role="button">
-        	  <span class="action-icon glyphicon glyphicon-step-backward"></span>
-        	</a>
-          <a class="action action-play btn btn-lg btn-primary" href="#" role="button">
-        	  <span class="action-icon glyphicon glyphicon-play"></span>
-        	</a>
-        	<a class="action action-pause btn btn-lg btn-disabled btn-default" href="#" role="button">
-        	  <span class="action-icon glyphicon glyphicon-pause"></span>
-        	</a>
-        	<a class="action action-slow btn btn-lg btn-default" href="#" role="button">
-        	  <span class="action-icon glyphicon glyphicon-minus"></span>
-        	</a>
-        	<a class="action action-fast btn btn-lg btn-default" href="#" role="button">
-        	  <span class="action-icon glyphicon glyphicon-plus"></span>
-        	</a>
-        	<a class="speed">Speed: <span class="speed-value"></span></a>
-        </p>
-      </div>
-
-      <div class="row marketing">
-        <div id="message-1" class="col-lg-6">
-          <h4>Loading message 1 of 3...</h4>
-          <p data-meaningful="true" ct-id="2">Loading...</p>
-        </div>
-<!--
-        <div id="message-2" class="col-lg-6">
-          <h4>Loading message 2 of 2...</h4>
-          <p data-meaningful="true" ct-id="5">Loading...</p>
-        </div> -->
-      </div>
-
-      <div class="footer">
-        <p>© Company 2013</p>
-      </div>
-
+<head>
+    <title>toki toki js</title>
+    <link rel="stylesheet" href="//baisong.github.io/toki-toki-js/css/style.css"/>
+</head>
+<body>
+    <div id="page">
+    <h1>toki toki js</h1>
+    <h2>demo</h2>
+    <p>Enter some toki pona into the input field and see how it gets parsed!</p>
+    <div id="convert-form">
+        <label for="source">Source</label>
+        <input name="source" value="toki pona li pona" id="source"><br><br>
+        <label for="target">Parsed</label>
+        <input name="target" id="target">
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script src="60.js"></script>
-  </body>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+    <script src="//baisong.github.io/toki-toki-js/vendor/leecrossley/functional.min.js"></script>
+    <script src="//baisong.github.io/toki-toki-js/js/toki-toki.js"></script>
+    <script src="//baisong.github.io/toki-toki-js/js/demo.js"></script>
+</body>
 </html>
-
