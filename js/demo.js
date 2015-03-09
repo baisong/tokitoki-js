@@ -3,4 +3,4 @@
     e.preventDefault();
     $('#target').val(tt.parseWords($('#source').val().split(' ')).toString());
   });
-})(jQuery)
+})(jQuery);
