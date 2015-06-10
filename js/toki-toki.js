@@ -18,7 +18,7 @@ tt.toCanonWord = function (word) {
   return word;
 }
 
-tt.useCanonWords = fjs.apply(tt.toCanonWord);
+tt.useCanonWords = fjs.map(tt.toCanonWord);
 tt.filterWords = fjs.filter(tt.isValidWord);
 
 tt.parseWords = function(words) {
