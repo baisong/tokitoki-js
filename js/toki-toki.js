@@ -30,6 +30,7 @@ tt.parseWords = function(words) {
 // validate sentence (S[VO?]*)
 // 1-to-1 gloss
 // better gloss
+  words = tt.useCanonWords(words);
   return tt.filterWords(words);
 }
 
