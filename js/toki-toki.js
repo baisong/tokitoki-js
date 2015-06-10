@@ -28,13 +28,36 @@ tt.useCanonWords = fjs.map(tt.toCanonWord);
 tt.filterWords = fjs.filter(tt.isValidWord);
 
 tt.parseWords = function(words) {
-// @TODO
-// inject hidden li for headwords: mi, sina, o.
-// split into groups of "li"
-// split into sub-groups of "e"
-// validate sentence (S[VO?]*)
-// 1-to-1 gloss
-// better gloss
+  // @TODO
+  // inject hidden li for headwords: mi, sina, o.
+  // split into groups of "li"
+  // split into sub-groups of "e"
+  // validate sentence (S[VO?]*)
+  // 1-to-1 gloss
+  // better gloss
+  var sentence = {
+    clauses: [
+      {
+        // Either one of these special cases, or a 3rd-person subject requiring "li".
+        subject: ['mi', 'sina', 'o'],
+        predicates: [
+          // Converts "en" to "li" after the first complete subject.
+          {
+            // Either one of these special cases, or no preverb.
+            preverb: ['ken', 'wile'],
+            verb: ['a','mu'],
+            objects: [
+              // Converts "en" to "e" after the first complete object.
+              ['a', 'mu'],
+              [],
+            ],
+          },
+          {}
+        ]
+      },
+      {}
+    ]
+  };
   words = tt.cleanWords(words);
   words = tt.useCanonWords(words);
   return tt.filterWords(words);
