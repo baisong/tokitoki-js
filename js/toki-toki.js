@@ -12,8 +12,8 @@ tt.toCanonWord = function (word) {
     oko: 'lukin',
     kin: 'a'
   };
-  if (typeof translations.word !== 'undefined') {
-    return translations.word;
+  if (typeof translations[word] !== 'undefined') {
+    return translations[word];
   }
   return word;
 }
