@@ -1,6 +1,7 @@
 var tt = {};
 
 tt.cleanWord = function (word) {
+  // @TODO filter only valid letters
   return word.toLowerCase().trim();
 }
 
